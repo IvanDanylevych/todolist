@@ -6,7 +6,7 @@ function ToDoApp() {
   const [editMode, setEditMode] = useState(null);
   const [editInput, setEditInput] = useState("");
 
-  // Завантаження даних із localStorage
+  // Завантаження даних із  localStorage
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem("tasks"));
     if (savedTasks) {
